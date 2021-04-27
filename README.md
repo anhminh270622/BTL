@@ -11,7 +11,7 @@ B3:vào file vừa giải nén ![image](https://user-images.githubusercontent.co
 ![image](https://user-images.githubusercontent.com/80165105/116266990-32957f00-a7a6-11eb-9a1b-b6dfbc4e6c25.png)
 
 
--->	Giới thiệu game :
+# Mô tả luồng hoạt đọng của game
 Tên game : game bắn súng
 
 •	Điều khiển: 
@@ -25,5 +25,7 @@ Tên game : game bắn súng
 -	Khi bị rơi xuống hố thì sẽ k mất 1 số lần chơi và nó sẽ hồi sinh lại sau 3s và nó sẽ lùi lại 1 khỏang nhỏ
 -	Khi chơi nhân vật chính cần tránh các đạn bắn từ con quái và tránh va chạm  với các con quái đó để tránh bị mất 1 lần chơi
 -	Khi chơi đến đích thì sẽ dành chiến thắng
-Nguồn : Tham khảo tại https://phattrienphanmem123az.com/
--Có thay đổi background so với nguồn
+# Nguồn :
+Tham khảo tại https://phattrienphanmem123az.com/
+-Có thay đổi background, ảnh nhân vật và các khung viền so với nguồn
+-Thay đổi thời gian ngắn hơn so với nguồn
