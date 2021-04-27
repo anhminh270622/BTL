@@ -1,0 +1,537 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "The enum type 'SDL_bool' is unscoped. Prefer 'enum class' over 'enum' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/GameSDL/GameSDL/LibSdl2/SDL2-2.0.8/include/SDL_rect.h"
+                },
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "SDL_PointInRect",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'GameMap::game_map_' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/GameSDL/GameSDL/game_map.h"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 2,
+                  "endLine": 19,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0GameMap@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "GameMap::game_map_"
+          }
+        },
+        {
+          "ruleId": "C6262",
+          "message": {
+            "text": "Function uses '16636' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/GameSDL/GameSDL/Source.cpp"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 5,
+                  "endLine": 67,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "SDL_main",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29913.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0040B1C0 -il C:\\Users\\Lenovo\\AppData\\Local\\Temp\\_CL_98b95659ast -typedil -f Source.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829913 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -FoDebug\\Source.obj -FdDebug\\vc142.pdb -Gd -analyze:projectdirectory D:\\GameSDL\\GameSDL -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I D:\\GameSDL\\GameSDL\\LibSdl2\\SDL2-2.0.8\\include -I D:\\GameSDL\\GameSDL\\LibSdl2\\SDL2_ttf-2.0.14\\include -I D:\\GameSDL\\GameSDL\\LibSdl2\\SDL2_mixer-2.0.2\\include -I D:\\GameSDL\\GameSDL\\LibSdl2\\SDL2_image-2.0.3\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/GameSDL/GameSDL/LibSdl2/SDL2-2.0.8/include/SDL_rect.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "010be0a51fc3bb2533ced5e6107c4bc5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/GameSDL/GameSDL/game_map.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "a06ca5d26bbb7bd046505ba6f03711a2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/GameSDL/GameSDL/Source.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "3b0817bc623899a8db859fdd25e3dcd7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/commonfunc.h"
+          },
+          "hashes": {
+            "md5": "5b9e443bedb22b591d8d165f1cf58e87"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl.h"
+          },
+          "hashes": {
+            "md5": "8b1e8aec89ba1cbef0a9c89e135b2c69"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_main.h"
+          },
+          "hashes": {
+            "md5": "0a79027d63346cb44bef0c8de3d37d54"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_stdinc.h"
+          },
+          "hashes": {
+            "md5": "cb915d23d3b95b75d565422258a72b8c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_config.h"
+          },
+          "hashes": {
+            "md5": "68725d5123e4224ec0f07fe20f600ed9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_platform.h"
+          },
+          "hashes": {
+            "md5": "16ed35243597281333bfd659f3529e9a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/begin_code.h"
+          },
+          "hashes": {
+            "md5": "3c605cf4c18094bad63707b22ed076c7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/close_code.h"
+          },
+          "hashes": {
+            "md5": "4b147c4e3a6a6d05d0e81a658ec0d82a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_assert.h"
+          },
+          "hashes": {
+            "md5": "701be8ef6718c0f6843aadf0d6c846eb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_atomic.h"
+          },
+          "hashes": {
+            "md5": "c40de0c18cd2b52735a9340639f95c66"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_audio.h"
+          },
+          "hashes": {
+            "md5": "51229a7ef71be1782a512cf3a268d148"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_error.h"
+          },
+          "hashes": {
+            "md5": "75644db558ce33b8d9f006f241709125"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_endian.h"
+          },
+          "hashes": {
+            "md5": "d428ca9213f7f3fadf13653dcfeb1f75"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_mutex.h"
+          },
+          "hashes": {
+            "md5": "7a1aee12499aaf2356827da27fd1eb20"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_thread.h"
+          },
+          "hashes": {
+            "md5": "11c93c10946ebcfbe4cfe513e3356d84"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_rwops.h"
+          },
+          "hashes": {
+            "md5": "600da45f2f3e3125174d8cdc2b11e138"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_clipboard.h"
+          },
+          "hashes": {
+            "md5": "05e75cc05a01a3f45114727c9c371b86"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_cpuinfo.h"
+          },
+          "hashes": {
+            "md5": "3a129ec12fd8db8ef8292d304b3ddd52"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_events.h"
+          },
+          "hashes": {
+            "md5": "44a826fd592450ccd0699f857c380472"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_video.h"
+          },
+          "hashes": {
+            "md5": "b876d29efdda92984fe788c7b5f8d3b8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_pixels.h"
+          },
+          "hashes": {
+            "md5": "6d98357eb4c4b22b7cc317d8a62e26a7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_surface.h"
+          },
+          "hashes": {
+            "md5": "3329fe98f0137eeee4407837963bd520"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_blendmode.h"
+          },
+          "hashes": {
+            "md5": "dbc94e5bfb8b1aaf3c3e954cd35e7df3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_keyboard.h"
+          },
+          "hashes": {
+            "md5": "2399613e0a9eac734039dc6c5d3b14de"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_keycode.h"
+          },
+          "hashes": {
+            "md5": "e5b96836be82f801d571c8f39b7d1670"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_scancode.h"
+          },
+          "hashes": {
+            "md5": "5dc6d1f8da5f05ca3a6ac8bb011fd544"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_mouse.h"
+          },
+          "hashes": {
+            "md5": "7a613c78f18ff2e5596de94eff50489f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_joystick.h"
+          },
+          "hashes": {
+            "md5": "789931662f40379371ca1b71abaa9113"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_gamecontroller.h"
+          },
+          "hashes": {
+            "md5": "d5efdab0bc3610628b596b547c75dfaa"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_quit.h"
+          },
+          "hashes": {
+            "md5": "9f7ff46e99a00908885caec380cacffe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_gesture.h"
+          },
+          "hashes": {
+            "md5": "55cf690f9f1121ff76c11f864de70fe1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_touch.h"
+          },
+          "hashes": {
+            "md5": "74017265ea0ad814cef9e979fcce8c7a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_filesystem.h"
+          },
+          "hashes": {
+            "md5": "99b3198b358abceb17e7a0812b8f59e3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_haptic.h"
+          },
+          "hashes": {
+            "md5": "a403b0d61cc0bc2ae179c21d2335146b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_hints.h"
+          },
+          "hashes": {
+            "md5": "019841ac5c2c12a6283a6e28f08d2d8e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_loadso.h"
+          },
+          "hashes": {
+            "md5": "b29c2d0869e1ae08a2e7981c8fb805ef"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_log.h"
+          },
+          "hashes": {
+            "md5": "94379fdabe1b57c660017e84032c301a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_messagebox.h"
+          },
+          "hashes": {
+            "md5": "c8a305930f71529610cec127a92c6fb2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_power.h"
+          },
+          "hashes": {
+            "md5": "351fb6df00bf5de74c2efc444e1e7f8f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_render.h"
+          },
+          "hashes": {
+            "md5": "af7a16e6b468e2f9c32d7ff031ec9456"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_shape.h"
+          },
+          "hashes": {
+            "md5": "a1f7ab547558f3bf3e544f0310777f0c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_system.h"
+          },
+          "hashes": {
+            "md5": "291b03bff2d682eadbe1656b734cbcb0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_timer.h"
+          },
+          "hashes": {
+            "md5": "3b32d166c66c3ff18ea24f1f26bbf26b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2-2.0.8/include/sdl_version.h"
+          },
+          "hashes": {
+            "md5": "ce0186f0fbd75c46c1aa2c7367644ab9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2_image-2.0.3/include/sdl_image.h"
+          },
+          "hashes": {
+            "md5": "6541052b6e6d0f7084ac6a6f17f60fe4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2_mixer-2.0.2/include/sdl_mixer.h"
+          },
+          "hashes": {
+            "md5": "1663d54ced21daebb3400f3584c2637a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/libsdl2/sdl2_ttf-2.0.14/include/sdl_ttf.h"
+          },
+          "hashes": {
+            "md5": "3ddf68126e6921be918ccfcc4805dda5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/baseobject.h"
+          },
+          "hashes": {
+            "md5": "c039a73adddbf1d5f7ee9be5ad8d783a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/gamesdl/gamesdl/mainobject.h"
+          },
+          "hashes": {
+            "md5": "1c97a0731572af06f7b36ca34bb43b50"
+          }
+        }
+      ]
+    }
+  ]
+}
