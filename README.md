@@ -1,5 +1,5 @@
 # Hướng dẫn cài đặt
-link:
+link: https://github.com/anhminh270622/BTL.git
 
 B1:Tải file về từ link trên ![image](https://user-images.githubusercontent.com/80165105/116264413-78e9de80-a7a4-11eb-95c8-c5e03f8d19e2.png)
 ![image](https://user-images.githubusercontent.com/80165105/116267323-830cdc80-a7a6-11eb-83fa-b54bfcaf843d.png)
@@ -25,3 +25,5 @@ Tên game : game bắn súng
 -	Khi bị rơi xuống hố thì sẽ k mất 1 số lần chơi và nó sẽ hồi sinh lại sau 3s và nó sẽ lùi lại 1 khỏang nhỏ
 -	Khi chơi nhân vật chính cần tránh các đạn bắn từ con quái và tránh va chạm  với các con quái đó để tránh bị mất 1 lần chơi
 -	Khi chơi đến đích thì sẽ dành chiến thắng
+Nguồn : Tham khảo tại https://phattrienphanmem123az.com/
+-Có thay đổi background so với nguồn
